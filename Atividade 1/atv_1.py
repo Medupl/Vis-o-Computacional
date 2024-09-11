@@ -136,7 +136,7 @@ def carregar_imagens(op):
 def carregar_webcam(op):
     # Carrega a imagem da webcam.
     try:
-        webcam = cv2.VideoCapture(0)  # Conectar a câmera no python
+        webcam = cv2.VideoCapture(1)  # Conectar a câmera no python
         
         if webcam.isOpened():  
             sucess, frame = webcam.read() 
