@@ -116,7 +116,7 @@ def converter_imagens(frame, save):
 def carregar_imagens(op):
     try:
         # Carregando uma imagem na pasta pre-definida.
-        pasta = os.path.expanduser("C:/Users/marco/OneDrive/UFCG/Programacao/Ras/Missao/Visao Computacional/Atividade 1")
+        pasta = os.path.expanduser("C:/Users/marco/OneDrive/UFCG/Programacao/GitHub/Visao-Computacional/Atividade 3/Imagens")
         nome = input("Digite o nome da imagem, ex: imagem.(png,jpg...): ")
         caminho = os.path.join(pasta,nome)
         imagem = cv2.imread(caminho)
@@ -136,7 +136,7 @@ def carregar_imagens(op):
 def carregar_webcam(op):
     # Carrega a imagem da webcam.
     try:
-        webcam = cv2.VideoCapture(1)  # Conectar a câmera no python
+        webcam = cv2.VideoCapture(0)  # Conectar a câmera no python
         
         if webcam.isOpened():  
             sucess, frame = webcam.read() 
